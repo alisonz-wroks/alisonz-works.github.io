@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Death That Blooms Into a Flower — Alison</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <span class="dot"></span>
+        <span>Alison / Portfolio</span>
+      </a>
+      <nav>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="kicker">Interactive Game</div>
+    <h1>Death That Blooms Into a Flower</h1>
+    <p class="subtitle">
+      A narrative-driven interactive game about love, faith, grief, and the ways human beings seek meaning in unbearable circumstances.
+    </p>
+  </section>
+
+  <section class="section two-col">
+
+    <!-- TOC -->
+    <aside class="toc">
+      <div class="title">Contents</div>
+      <a href="#motivation">Creative Motivation</a>
+      <a href="#script">Script Development</a>
+      <a href="#team">Team Collaboration</a>
+      <a href="#players">Player Feedback</a>
+      <a href="#model">Player-Choice Model</a>
+      <a href="#outcome">Outcome</a>
+    </aside>
+
+    <!-- Main -->
+    <div>
+
+      <!-- Motivation -->
+      <div class="panel" id="motivation">
+        <h2>Creative Motivation</h2>
+        <p>
+          I created <em>Death That Blooms Into a Flower</em> after becoming deeply interested in how people make meaning when faced with death, religion, and emotional loss.
+          The story is inspired by philosophical and theological questions about love, sacrifice, and human dignity, especially in situations where suffering feels unavoidable.
+        </p>
+        <p>
+          Rather than telling a linear story, I wanted players to actively participate in the characters’ emotional journeys, allowing their choices to shape how grief, faith, and intimacy are expressed.
+        </p>
+      </div>
+
+      <!-- Script -->
+      <details id="script" open>
+        <summary>
+          Script Development
+          <span class="summary-right">from concept to narrative structure</span>
+        </summary>
+        <div class="content">
+          <p>
+            I began with a high-level narrative outline focused on emotional arcs rather than plot events.  
+            Each chapter was designed around a specific emotional state: hope, doubt, despair, and reconciliation.
+          </p>
+          <ul>
+            <li>Story outline and branching structure</li>
+            <li>Character backstories and symbolic motifs</li>
+            <li>Dialogue drafts and emotional beats</li>
+            <li>Iterative rewrites based on pacing and player experience</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Team -->
+      <details id="team">
+        <summary>
+          Team Collaboration
+          <span class="summary-right">how I coordinated a multi-disciplinary team</span>
+        </summary>
+        <div class="content">
+          <p>
+            I served as the writer and producer, coordinating between the programmer and the visual artist.
+            My role was to ensure that the narrative, visual tone, and gameplay systems supported the same emotional goals.
+          </p>
+          <ul>
+            <li>Created narrative documents and art briefs</li>
+            <li>Provided structured feedback on visual assets</li>
+            <li>Maintained version control and milestone tracking</li>
+            <li>Aligned story changes with technical constraints</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Players -->
+      <details id="players">
+        <summary>
+          Player Feedback
+          <span class="summary-right">how players shaped later revisions</span>
+        </summary>
+        <div class="content">
+          <p>
+            After releasing early builds and the Steam wishlist page, I collected player responses from social media and testers.
+            Many players commented on the emotional weight of the story and the impact of their choices.
+          </p>
+          <ul>
+            <li>Adjusted dialogue pacing based on player confusion</li>
+            <li>Refined emotional transitions between scenes</li>
+            <li>Improved clarity of choice consequences</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Model -->
+      <details id="model" open>
+        <summary>
+          Player-Choice & Emotional Model
+          <span class="summary-right">the computational system behind the story</span>
+        </summary>
+        <div class="content">
+          <p>
+            To move beyond fixed dialogue trees, I designed a system that tracks players’ choices as emotional variables.
+            These variables influence how characters speak, react, and interpret events.
+          </p>
+          <ul>
+            <li>Each choice modifies emotional states such as grief, trust, and detachment</li>
+            <li>Dialogue lines are selected based on the current emotional profile</li>
+            <li>The narrative becomes a dynamic response to player behavior</li>
+          </ul>
+          <p>
+            This model allows the game to simulate how real people express themselves differently under emotional pressure, making the story more psychologically realistic.
+          </p>
+        </div>
+      </details>
+
+      <!-- Outcome -->
+      <details id="outcome" open>
+        <summary>
+          Outcome
+          <span class="summary-right">what exists in the real world</span>
+        </summary>
+        <div class="content">
+          <ul>
+            <li>Steam Wishlist Page (link)</li>
+            <li>Playable builds and trailers</li>
+            <li>Public audience feedback</li>
+          </ul>
+        </div>
+      </details>
+
+      <div style="height:20px"></div>
+      <a href="index.html" style="color:var(--muted);">← Back to Projects</a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Alison.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = String(new Date().getFullYear());
+</script>
+
+</body>
+</html>
